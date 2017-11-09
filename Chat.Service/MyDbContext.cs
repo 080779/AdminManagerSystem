@@ -1,4 +1,4 @@
-﻿using Chat.Service.Entities;
+﻿using SYS.Service.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chat.Service
+namespace SYS.Service
 {
     /// <summary>
     /// ef操作类

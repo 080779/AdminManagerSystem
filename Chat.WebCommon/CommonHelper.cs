@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chat.WebCommon
+namespace SYS.WebCommon
 {
     public static class CommonHelper
     {

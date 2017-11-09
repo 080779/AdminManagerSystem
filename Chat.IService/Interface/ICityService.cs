@@ -1,11 +1,11 @@
-﻿using Chat.DTO.DTO;
+﻿using SYS.DTO.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chat.IService.Interface
+namespace SYS.IService.Interface
 {
     /// <summary>
     /// 城市服务接口

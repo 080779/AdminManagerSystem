@@ -1,13 +1,13 @@
-﻿using Chat.IService.Interface;
+﻿using SYS.IService.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Chat.DTO.DTO;
-using Chat.Service.Entities;
+using SYS.DTO.DTO;
+using SYS.Service.Entities;
 
-namespace Chat.Service.Service
+namespace SYS.Service.Service
 {
     public class AdminUserService : IAdminUserService
     {

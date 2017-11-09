@@ -1,13 +1,13 @@
-﻿using Chat.IService.Interface;
+﻿using SYS.IService.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Chat.DTO.DTO;
-using Chat.DTO;
+using SYS.DTO.DTO;
+using SYS.DTO;
 
-namespace Chat.Service.Service
+namespace SYS.Service.Service
 {
     public class IdNameService : IIdNameService
     {

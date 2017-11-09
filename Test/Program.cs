@@ -1,5 +1,5 @@
-﻿using Chat.IService.Interface;
-using Chat.Service.Service;
+﻿using SYS.IService.Interface;
+using SYS.Service.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;

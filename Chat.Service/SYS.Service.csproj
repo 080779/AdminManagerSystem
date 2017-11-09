@@ -7,8 +7,8 @@
     <ProjectGuid>{1D7C08A8-8ED2-4A8F-A22B-FE1FEA8C869A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Chat.Service</RootNamespace>
-    <AssemblyName>Chat.Service</AssemblyName>
+    <RootNamespace>SYS.Service</RootNamespace>
+    <AssemblyName>SYS.Service</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -78,13 +78,13 @@
     <Compile Include="Service\RoleService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Chat.DTO\Chat.DTO.csproj">
+    <ProjectReference Include="..\Chat.DTO\SYS.DTO.csproj">
       <Project>{dc1ce7c1-fc87-41ef-8045-30e85e93bca9}</Project>
-      <Name>Chat.DTO</Name>
+      <Name>SYS.DTO</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Chat.IService\Chat.IService.csproj">
+    <ProjectReference Include="..\Chat.IService\SYS.IService.csproj">
       <Project>{ee1591ca-ebbf-4c29-baf4-78f01ae2a5d0}</Project>
-      <Name>Chat.IService</Name>
+      <Name>SYS.IService</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -13,8 +13,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Chat.AdminWeb</RootNamespace>
-    <AssemblyName>Chat.AdminWeb</AssemblyName>
+    <RootNamespace>SYS.AdminWeb</RootNamespace>
+    <AssemblyName>SYS.AdminWeb</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -128,17 +128,17 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Chat.DTO\Chat.DTO.csproj">
+    <ProjectReference Include="..\Chat.DTO\SYS.DTO.csproj">
       <Project>{dc1ce7c1-fc87-41ef-8045-30e85e93bca9}</Project>
-      <Name>Chat.DTO</Name>
+      <Name>SYS.DTO</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Chat.IService\Chat.IService.csproj">
+    <ProjectReference Include="..\Chat.IService\SYS.IService.csproj">
       <Project>{ee1591ca-ebbf-4c29-baf4-78f01ae2a5d0}</Project>
-      <Name>Chat.IService</Name>
+      <Name>SYS.IService</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Chat.WebCommon\Chat.WebCommon.csproj">
+    <ProjectReference Include="..\Chat.WebCommon\SYS.WebCommon.csproj">
       <Project>{d9be0c2c-29c7-45a6-9542-1fa31960f500}</Project>
-      <Name>Chat.WebCommon</Name>
+      <Name>SYS.WebCommon</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

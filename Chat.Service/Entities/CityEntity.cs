@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chat.Service.Entities
+namespace SYS.Service.Entities
 {
     /// <summary>
     /// 城市实体类

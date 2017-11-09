@@ -1,4 +1,4 @@
-﻿using Chat.Service.Entities;
+﻿using SYS.Service.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
@@ -6,19 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chat.Service.ModelConfig
+namespace SYS.Service.ModelConfig
 {
     class UserConfig:EntityTypeConfiguration<UserEntity>
     {
-        public class a
-        {
-            public string Name { get; set; }
-            public string NickName { get; set; }
-            public string PhotoUrl { get; set; }
-            public string Mobile { get; set; }
-            public bool Gender { get; set; }
-            public string Address { get; set; }
-        }
         public UserConfig()
         {
 

@@ -7,8 +7,8 @@
     <ProjectGuid>{DC1CE7C1-FC87-41EF-8045-30E85E93BCA9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Chat.DTO</RootNamespace>
-    <AssemblyName>Chat.DTO</AssemblyName>
+    <RootNamespace>SYS.DTO</RootNamespace>
+    <AssemblyName>SYS.DTO</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

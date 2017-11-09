@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chat.DTO
+namespace SYS.DTO
 {
     [Serializable]
     public abstract class BaseDTO

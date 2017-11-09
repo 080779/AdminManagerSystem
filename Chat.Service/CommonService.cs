@@ -1,11 +1,11 @@
-﻿using Chat.Service.Entities;
+﻿using SYS.Service.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chat.Service
+namespace SYS.Service
 {
     class CommonService<T> where T : BaseEntity
     {
