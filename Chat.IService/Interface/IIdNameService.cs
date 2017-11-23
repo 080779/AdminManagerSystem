@@ -12,7 +12,7 @@ namespace SYS.IService.Interface
     {
         long AddNew(string typeName, string name, string imgUrl);
         IdNameDTO GetById(long id);
-        IdNameDTO[] GetAll(string typeName);
-        IdNameDTO[] GetAll();
+        IdNameDTO[] GetAllByTypeName(string typeName);
+        //IdNameDTO[] GetAll();
     }
 }

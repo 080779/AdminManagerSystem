@@ -57,6 +57,23 @@ namespace SYS.WebCommon
             return sbCode.ToString();
         }
 
+        public static string FormatMoblie(string moblie)
+        {
+            StringBuilder formatMoblie = new StringBuilder();
+            for (int i = 0; i < moblie.Length; i++)
+            {
+                if (i >= 3 && i <= 6)
+                {
+                    formatMoblie.Append("*");
+                }
+                else
+                {
+                    formatMoblie.Append(moblie[i]);
+                }
+            }
+            return formatMoblie.ToString();
+        }
+
         public static void SendEmail(string[] receiveAddress, Dictionary<string, string> dicts)
         {
             using (MailMessage mailMessage = new MailMessage())

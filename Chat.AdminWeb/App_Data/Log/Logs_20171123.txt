@@ -1,0 +1,198 @@
+2017-11-23 17:51:05,579 [5] DEBUG SYS.Service.MyDbContext - EF执行SQL：Opened connection at 2017/11/23 17:51:05 +08:00
+
+2017-11-23 17:51:05,589 [5] DEBUG SYS.Service.MyDbContext - EF执行SQL：Started transaction at 2017/11/23 17:51:05 +08:00
+
+2017-11-23 17:51:05,647 [5] DEBUG SYS.Service.MyDbContext - EF执行SQL：INSERT [dbo].[T_IdNames]([TypeName], [Name], [ImgUrl], [IsDeleted], [CreateDateTime])
+VALUES (@0, @1, NULL, @2, @3)
+SELECT [Id]
+FROM [dbo].[T_IdNames]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+2017-11-23 17:51:05,647 [5] DEBUG SYS.Service.MyDbContext - EF执行SQL：
+
+2017-11-23 17:51:05,648 [5] DEBUG SYS.Service.MyDbContext - EF执行SQL：-- @0: '活动状态' (Type = String, Size = 1024)
+
+2017-11-23 17:51:05,648 [5] DEBUG SYS.Service.MyDbContext - EF执行SQL：-- @1: '未开始' (Type = String, Size = 1024)
+
+2017-11-23 17:51:05,648 [5] DEBUG SYS.Service.MyDbContext - EF执行SQL：-- @2: 'False' (Type = Boolean)
+
+2017-11-23 17:51:05,648 [5] DEBUG SYS.Service.MyDbContext - EF执行SQL：-- @3: '2017/11/23 17:51:05' (Type = DateTime2)
+
+2017-11-23 17:51:05,648 [5] DEBUG SYS.Service.MyDbContext - EF执行SQL：-- Executing at 2017/11/23 17:51:05 +08:00
+
+2017-11-23 17:51:05,697 [5] DEBUG SYS.Service.MyDbContext - EF执行SQL：-- Completed in 49 ms with result: SqlDataReader
+
+2017-11-23 17:51:05,697 [5] DEBUG SYS.Service.MyDbContext - EF执行SQL：
+
+2017-11-23 17:51:05,699 [5] DEBUG SYS.Service.MyDbContext - EF执行SQL：Committed transaction at 2017/11/23 17:51:05 +08:00
+
+2017-11-23 17:51:05,699 [5] DEBUG SYS.Service.MyDbContext - EF执行SQL：Closed connection at 2017/11/23 17:51:05 +08:00
+
+2017-11-23 17:51:23,238 [6] ERROR SYS.AdminWeb.App_Start.Filter.SYSExceptionFilter - 出现未处理异常：System.InvalidOperationException: 最大值“2”必须大于或等于最小值“20”。
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.EnsureLegalLengths()
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid(Object value)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(Object value, ValidationContext validationContext)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(Object value, ValidationContext validationContext)
+   在 System.Web.Mvc.DataAnnotationsModelValidator.Validate(Object container)
+   在 System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   在 System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexElementalModel(ControllerContext controllerContext, ModelBindingContext bindingContext, Object model)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2017-11-23 17:53:33,366 [5] ERROR SYS.AdminWeb.App_Start.Filter.SYSExceptionFilter - 出现未处理异常：System.InvalidOperationException: 最大值“2”必须大于或等于最小值“20”。
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.EnsureLegalLengths()
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid(Object value)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(Object value, ValidationContext validationContext)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(Object value, ValidationContext validationContext)
+   在 System.Web.Mvc.DataAnnotationsModelValidator.Validate(Object container)
+   在 System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   在 System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexElementalModel(ControllerContext controllerContext, ModelBindingContext bindingContext, Object model)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2017-11-23 17:53:34,310 [12] DEBUG SYS.Service.MyDbContext - EF执行SQL：Opened connection at 2017/11/23 17:53:34 +08:00
+
+2017-11-23 17:53:34,314 [12] DEBUG SYS.Service.MyDbContext - EF执行SQL：Started transaction at 2017/11/23 17:53:34 +08:00
+
+2017-11-23 17:53:34,842 [12] DEBUG SYS.Service.MyDbContext - EF执行SQL：INSERT [dbo].[T_IdNames]([TypeName], [Name], [ImgUrl], [IsDeleted], [CreateDateTime])
+VALUES (@0, @1, NULL, @2, @3)
+SELECT [Id]
+FROM [dbo].[T_IdNames]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+2017-11-23 17:53:34,842 [12] DEBUG SYS.Service.MyDbContext - EF执行SQL：
+
+2017-11-23 17:53:34,844 [12] DEBUG SYS.Service.MyDbContext - EF执行SQL：-- @0: '活动状态' (Type = String, Size = 1024)
+
+2017-11-23 17:53:34,844 [12] DEBUG SYS.Service.MyDbContext - EF执行SQL：-- @1: '未开始' (Type = String, Size = 1024)
+
+2017-11-23 17:53:34,844 [12] DEBUG SYS.Service.MyDbContext - EF执行SQL：-- @2: 'False' (Type = Boolean)
+
+2017-11-23 17:53:34,844 [12] DEBUG SYS.Service.MyDbContext - EF执行SQL：-- @3: '2017/11/23 17:53:33' (Type = DateTime2)
+
+2017-11-23 17:53:34,844 [12] DEBUG SYS.Service.MyDbContext - EF执行SQL：-- Executing at 2017/11/23 17:53:34 +08:00
+
+2017-11-23 17:53:34,847 [12] DEBUG SYS.Service.MyDbContext - EF执行SQL：-- Completed in 1 ms with result: SqlDataReader
+
+2017-11-23 17:53:34,847 [12] DEBUG SYS.Service.MyDbContext - EF执行SQL：
+
+2017-11-23 17:53:34,860 [12] DEBUG SYS.Service.MyDbContext - EF执行SQL：Committed transaction at 2017/11/23 17:53:34 +08:00
+
+2017-11-23 17:53:34,861 [12] DEBUG SYS.Service.MyDbContext - EF执行SQL：Closed connection at 2017/11/23 17:53:34 +08:00
+
+2017-11-23 17:53:36,732 [8] ERROR SYS.AdminWeb.App_Start.Filter.SYSExceptionFilter - 出现未处理异常：System.InvalidOperationException: 最大值“2”必须大于或等于最小值“20”。
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.EnsureLegalLengths()
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid(Object value)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(Object value, ValidationContext validationContext)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(Object value, ValidationContext validationContext)
+   在 System.Web.Mvc.DataAnnotationsModelValidator.Validate(Object container)
+   在 System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   在 System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexElementalModel(ControllerContext controllerContext, ModelBindingContext bindingContext, Object model)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2017-11-23 17:53:38,670 [5] ERROR SYS.AdminWeb.App_Start.Filter.SYSExceptionFilter - 出现未处理异常：System.InvalidOperationException: 最大值“2”必须大于或等于最小值“20”。
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.EnsureLegalLengths()
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid(Object value)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(Object value, ValidationContext validationContext)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(Object value, ValidationContext validationContext)
+   在 System.Web.Mvc.DataAnnotationsModelValidator.Validate(Object container)
+   在 System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   在 System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexElementalModel(ControllerContext controllerContext, ModelBindingContext bindingContext, Object model)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2017-11-23 17:53:39,721 [8] ERROR SYS.AdminWeb.App_Start.Filter.SYSExceptionFilter - 出现未处理异常：System.InvalidOperationException: 最大值“2”必须大于或等于最小值“20”。
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.EnsureLegalLengths()
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid(Object value)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(Object value, ValidationContext validationContext)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(Object value, ValidationContext validationContext)
+   在 System.Web.Mvc.DataAnnotationsModelValidator.Validate(Object container)
+   在 System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   在 System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexElementalModel(ControllerContext controllerContext, ModelBindingContext bindingContext, Object model)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2017-11-23 17:53:40,421 [9] ERROR SYS.AdminWeb.App_Start.Filter.SYSExceptionFilter - 出现未处理异常：System.InvalidOperationException: 最大值“2”必须大于或等于最小值“20”。
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.EnsureLegalLengths()
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid(Object value)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(Object value, ValidationContext validationContext)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(Object value, ValidationContext validationContext)
+   在 System.Web.Mvc.DataAnnotationsModelValidator.Validate(Object container)
+   在 System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   在 System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexElementalModel(ControllerContext controllerContext, ModelBindingContext bindingContext, Object model)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2017-11-23 17:53:44,433 [12] ERROR SYS.AdminWeb.App_Start.Filter.SYSExceptionFilter - 出现未处理异常：System.InvalidOperationException: 最大值“2”必须大于或等于最小值“20”。
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.EnsureLegalLengths()
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid(Object value)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(Object value, ValidationContext validationContext)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(Object value, ValidationContext validationContext)
+   在 System.Web.Mvc.DataAnnotationsModelValidator.Validate(Object container)
+   在 System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   在 System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexElementalModel(ControllerContext controllerContext, ModelBindingContext bindingContext, Object model)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2017-11-23 17:53:46,572 [9] ERROR SYS.AdminWeb.App_Start.Filter.SYSExceptionFilter - 出现未处理异常：System.InvalidOperationException: 最大值“2”必须大于或等于最小值“20”。
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.EnsureLegalLengths()
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid(Object value)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(Object value, ValidationContext validationContext)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(Object value, ValidationContext validationContext)
+   在 System.Web.Mvc.DataAnnotationsModelValidator.Validate(Object container)
+   在 System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   在 System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexElementalModel(ControllerContext controllerContext, ModelBindingContext bindingContext, Object model)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2017-11-23 17:53:47,410 [6] ERROR SYS.AdminWeb.App_Start.Filter.SYSExceptionFilter - 出现未处理异常：System.InvalidOperationException: 最大值“2”必须大于或等于最小值“20”。
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.EnsureLegalLengths()
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid(Object value)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(Object value, ValidationContext validationContext)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(Object value, ValidationContext validationContext)
+   在 System.Web.Mvc.DataAnnotationsModelValidator.Validate(Object container)
+   在 System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   在 System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexElementalModel(ControllerContext controllerContext, ModelBindingContext bindingContext, Object model)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2017-11-23 17:53:54,021 [9] ERROR SYS.AdminWeb.App_Start.Filter.SYSExceptionFilter - 出现未处理异常：System.InvalidOperationException: 最大值“2”必须大于或等于最小值“20”。
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.EnsureLegalLengths()
+   在 System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid(Object value)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(Object value, ValidationContext validationContext)
+   在 System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(Object value, ValidationContext validationContext)
+   在 System.Web.Mvc.DataAnnotationsModelValidator.Validate(Object container)
+   在 System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   在 System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexElementalModel(ControllerContext controllerContext, ModelBindingContext bindingContext, Object model)
+   在 System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.DefaultModelBinder.BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   在 System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)

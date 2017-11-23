@@ -30,8 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonHelper.cs" />
+    <Compile Include="Json\AjaxResult.cs" />
+    <Compile Include="Json\JsonNetActionFilter.cs" />
+    <Compile Include="Json\JsonNetResult.cs" />
+    <Compile Include="Mvc\MVCHelper.cs" />
+    <Compile Include="Mvc\TrimToDBCModelBinder.cs" />
+    <Compile Include="page\DataPaging.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
