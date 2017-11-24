@@ -13,6 +13,12 @@ namespace SYS.IService.Interface
         long AddNew(string typeName, string name, string imgUrl);
         IdNameDTO GetById(long id);
         IdNameDTO[] GetAllByTypeName(string typeName);
+        IdNameSearchResult GetAllByTypeName(string typeName, int currentIndex, int pageIndex);
         //IdNameDTO[] GetAll();
+    }
+    public class IdNameSearchResult
+    {
+        public IdNameDTO[] IdNames { get; set; }
+        public int Count { get; set; }
     }
 }

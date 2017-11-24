@@ -14,16 +14,8 @@ namespace SYS.WebCommon.Mvc
         /// </summary>
         public static string GetValidMsg(ModelStateDictionary modelSatae)
         {
-            string errorMsg=string.Empty;
-            foreach (var propName in modelSatae.Keys)
-            {
-                if (modelSatae[propName].Errors.Count <= 0)
-                {
-                    continue;
-                }
-                errorMsg = propName + ":" + modelSatae[propName].Errors[1].ErrorMessage;
-            }
-            return errorMsg;
+            string fpName = modelSatae.Keys.First();
+            return modelSatae[fpName].Errors[0].ErrorMessage; ;
 
             //StringBuilder builer = new StringBuilder();
             //foreach (var propName in modelSatae.Keys)

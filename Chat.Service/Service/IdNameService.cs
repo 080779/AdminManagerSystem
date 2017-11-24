@@ -45,6 +45,23 @@ namespace SYS.Service.Service
             }
         }
 
+        public IdNameSearchResult GetAllByTypeName(string typeName,int currentIndex,int pageIndex)
+        {
+            using (MyDbContext dbc = new MyDbContext())
+            {
+                CommonService<IdNameEntity> cs = new CommonService<IdNameEntity>(dbc);
+                var entity = cs.GetAll().Where(i => i.TypeName == typeName);
+                if (entity == null)
+                {
+                    return null;
+                }
+                IdNameSearchResult result = new IdNameSearchResult();
+                result.Count = entity.Count();
+                result.IdNames= entity.OrderByDescending(i=>i.CreateDateTime).Skip(currentIndex).Take(pageIndex).Select(i => new IdNameDTO { Id = i.Id, Name = i.Name, TypeName = i.TypeName, CreateDateTime = i.CreateDateTime, ImgUrl = i.ImgUrl }).ToArray();
+                return result;
+            }
+        }
+
         public IdNameDTO GetById(long id)
         {
             using (MyDbContext dbc = new MyDbContext())

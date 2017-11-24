@@ -53,8 +53,13 @@
     <Compile Include="Json\JsonNetResult.cs" />
     <Compile Include="Mvc\MVCHelper.cs" />
     <Compile Include="Mvc\TrimToDBCModelBinder.cs" />
+    <Compile Include="page\Pagination.cs" />
     <Compile Include="page\DataPaging.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CommonJs\Common.js" />
+    <Content Include="CommonJs\template.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
